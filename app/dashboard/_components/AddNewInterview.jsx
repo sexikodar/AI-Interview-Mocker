@@ -1,4 +1,4 @@
-"use  client"
+"use client"
 import React, { useState } from 'react'
 import {
     Dialog,
@@ -30,7 +30,7 @@ function AddNewInterview() {
     const [jsonResponse,setJsonResponse] = useState([]);
     const router = useRouter();
     const {user} = useUser();   
-    const onSubmit=async(e)=>{
+    const onSubmit= async(e)=>{
         setLoading(true);
         e.preventDefault();
         console.log(jobPosition,jobDesc,jobExperience);
